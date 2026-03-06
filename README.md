@@ -1,16 +1,54 @@
-# React + Vite
+# Reactflix App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based movie browsing application built with Vite. Users can browse movies, add them to favorites, and manage their favorite collection with persistent local storage.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Movie Browsing**: Display and explore movies from an API
+- **Favorites Management**: Add and remove movies from your favorites list
+- **Persistent Storage**: Favorites are saved to browser's local storage and restored on page reload
+- **Responsive Navigation**: Clean navigation bar for app navigation
+- **Movie Cards**: Display movie information in an organized card layout
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** - UI library
+- **Vite** - Build tool with HMR (Hot Module Replacement)
+- **Context API** - State management for favorites
+- **Local Storage** - Client-side data persistence
+- **CSS** - Styling for components and pages
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+├── components/       # Reusable React components (MovieCard, NavBar)
+├── contexts/         # React Context for global state (MovieContext)
+├── pages/            # Page components (Home, Favorites)
+├── services/         # API integration (api.js)
+├── css/              # Stylesheet files
+└── App.jsx           # Main application component
+```
+
+## Getting Started
+
+1. Install dependencies:
+
+   ```
+   npm install
+   ```
+
+2. Run the development server:
+
+   ```
+   npm run dev
+   ```
+
+3. Build for production:
+   ```
+   npm run build
+   ```
+
+## Reference
+
+This project was developed following the tutorial: [React Movie App Tutorial](https://www.youtube.com/watch?v=G6D9cBaLViA)
