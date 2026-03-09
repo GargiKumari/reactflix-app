@@ -48,7 +48,3 @@ src/
    ```
    npm run build
    ```
-
-## Reference
-
-This project was developed following the tutorial: [React Movie App Tutorial](https://www.youtube.com/watch?v=G6D9cBaLViA)
